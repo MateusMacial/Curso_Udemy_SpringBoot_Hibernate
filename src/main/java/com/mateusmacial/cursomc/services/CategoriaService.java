@@ -10,7 +10,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
-import com.mateusmacial.cursomc.domain.Categoria;
+import com.mateusmacial.cursomc.domain.Categoria; 
 import com.mateusmacial.cursomc.dto.CategoriaDTO;
 import com.mateusmacial.cursomc.repositories.CategoriaRepository;
 import com.mateusmacial.cursomc.services.exceptions.DataIntegrityException;

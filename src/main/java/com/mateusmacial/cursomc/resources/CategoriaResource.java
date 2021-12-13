@@ -32,7 +32,7 @@ public class CategoriaResource {
 	public ResponseEntity<Categoria> find(@PathVariable Integer id) {		
 		Categoria obj = service.find(id);		
 		return ResponseEntity.ok().body(obj);
-	}	
+	}
 	
 	@RequestMapping(method=RequestMethod.POST)
 	public ResponseEntity<Void> insert(@Valid @RequestBody CategoriaDTO objDto){ 
@@ -42,7 +42,7 @@ public class CategoriaResource {
 				.fromCurrentRequest()
 				.path("/{id}")
 				.buildAndExpand(obj.getId())
-				.toUri();		
+				.toUri();
 		return ResponseEntity.created(uri).build();
 	}
 	
